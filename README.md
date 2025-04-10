@@ -15,7 +15,7 @@ I’m dedicated to continuous learning and creating solutions that make a differ
 - **Tools & Technologies:** Docker, AWS, and various DevOps tools
 
 ## What I'm Looking For
-I’m looking to collaborate on backend projects, cloud-native applications, and full-stack systems.  
+I’m looking to collaborate on backend projects, and full-stack systems.  
 If you're working on something exciting or would like to partner on a project, let's connect!
 
 ## How to Reach Me
