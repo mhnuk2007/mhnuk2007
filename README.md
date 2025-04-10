@@ -20,6 +20,7 @@ If you're working on something exciting or would like to partner on a project, l
 
 ## How to Reach Me
 - [LinkedIn](https://www.linkedin.com/in/mohan-lal-b79790126/)
+- Follow me on LinkedIn: https://linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=mohan-lal-b79790126
 
 ## Fun Fact
 😄 Fun fact: I’m a self-taught developer building real-world projects without a formal CS degree!
