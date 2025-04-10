@@ -1,10 +1,27 @@
-# Hi there, I'm Mohan Lal (@mhnuk2007)
+# Hi there, I'm Mohan Lal (@mhnuk2007) 👋
 
-- 👀 I’m interested in Full-Stack Development, Cloud Computing, and DevOps.
-- 🌱 I’m currently learning Java, Spring Boot, MySQL, Docker, AWS, and DevOps tools.
-- 💞️ I’m looking to collaborate on backend projects, cloud-native applications, and full-stack systems.
-- 📫 How to reach me: [LinkedIn](https://www.linkedin.com/in/mohan-lal-b79790126?) 
-- 😄 Pronouns: He/Him
-- ⚡ Fun fact: I’m a self-taught developer building real-world projects without a formal CS degree!
+## About Me
+I'm a self-taught developer passionate about building real-world projects without a formal CS degree.  
+I’m dedicated to continuous learning and creating solutions that make a difference.
 
-> I'm passionate about continuous learning and building solutions that make a difference. Currently documenting my learning roadmap and projects on GitHub. Let’s connect and grow together!
+## What I'm Interested In
+- **Full-Stack Development**
+- **Cloud Computing**
+- **DevOps**
+
+## Currently Learning
+- **Languages & Frameworks:** Java, Spring Boot
+- **Databases:** MySQL
+- **Tools & Technologies:** Docker, AWS, and various DevOps tools
+
+## What I'm Looking For
+I’m looking to collaborate on backend projects, cloud-native applications, and full-stack systems.  
+If you're working on something exciting or would like to partner on a project, let's connect!
+
+## How to Reach Me
+- [LinkedIn](https://www.linkedin.com/in/mohan-lal-b79790126/)
+
+## Fun Fact
+😄 Fun fact: I’m a self-taught developer building real-world projects without a formal CS degree!
+
+Let's connect and grow together! 🚀
