@@ -10,19 +10,19 @@ I’m dedicated to continuous learning and creating solutions that make a differ
 - **DevOps**
 
 ## Currently Learning
-- **Languages & Frameworks:** Java, Spring Boot
-- **Databases:** MySQL
+- **Languages & Frameworks:** Java, Spring Boot  
+- **Databases:** MySQL  
 - **Tools & Technologies:** Docker, AWS, and various DevOps tools
 
 ## What I'm Looking For
-I’m looking to collaborate on backend projects, and full-stack systems.  
+I’m looking to collaborate on backend projects and full-stack systems.  
 If you're working on something exciting or would like to partner on a project, let's connect!
 
 ## How to Reach Me
-- [LinkedIn](https://www.linkedin.com/in/mohan-lal-b79790126/)
-- Follow me on LinkedIn: https://linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=mohan-lal-b79790126
+- [LinkedIn Profile](https://www.linkedin.com/in/mohan-lal-b79790126/)  
+- [Follow Me on LinkedIn](https://linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=mohan-lal-b79790126)
 
 ## Fun Fact
-😄 Fun fact: I’m a self-taught developer building real-world projects without a formal CS degree!
+😄 I’m a self-taught developer building real-world projects without a formal CS degree!
 
-Let's connect and grow together! 🚀
+Let’s connect and grow together! 🚀
