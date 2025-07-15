@@ -11,7 +11,7 @@ I’m dedicated to continuous learning and creating solutions that make a differ
 
 ## Currently Learning
 - **Languages & Frameworks:** Java, Spring Boot  
-- **Databases:** MySQL  
+- **Databases:** MySQL/PostgreSQL  
 - **Tools & Technologies:** Docker, AWS, and various DevOps tools
 
 ## What I'm Looking For
