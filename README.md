@@ -25,7 +25,7 @@ Proud to be part of the **AWS Emerging Talent Community**, recognized for active
 📌 [View Badge](https://pages.awseducate.com/rs/773-JYK-169/images/AWSEBadge.png)
 
 ## 📬 How to Reach Me
-- [LinkedIn Profile](https://www.linkedin.com/in/mohan-lal-b79790126/)  
+- [LinkedIn Profile](https://www.linkedin.com/in/mhnuk2007/)  
 - [Follow Me on LinkedIn](https://linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=mohan-lal-b79790126)
 
 ## 🎯 Fun Fact
