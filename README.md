@@ -11,6 +11,7 @@
 <!-- SOCIAL BADGES -->
 [![Portfolio](https://img.shields.io/badge/🌐_Live_Portfolio-6366F1?style=for-the-badge&logoColor=white)](https://mhnuk2007.github.io/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/mhnuk2007/)
+[![LeetCode](https://img.shields.io/badge/LeetCode-Profile-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/mhnuk2007/)
 [![Email](https://img.shields.io/badge/Email_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your-email@example.com)
 [![AWS Community](https://img.shields.io/badge/AWS_Emerging_Talent-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://linkedin.com/in/mhnuk2007/)
 
@@ -22,6 +23,30 @@
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=mhnuk2007&label=Profile%20Views&color=6366f1&style=flat-square" alt="Profile Views" />
 </div>
+
+---
+
+## Recent Learning Updates (2026)
+
+### C#/.NET Learning Journey
+- Built hands-on console apps covering C# fundamentals, OOP, exception handling, collections, string operations, and parsing/type conversion.
+- Expanded backend perspective by learning C# alongside Java and Python.
+- Repository: [C#/.NET Practice](https://github.com/mhnuk2007/learning-dotnet)
+
+### Python DSA Journey
+- Practiced Big-O analysis, recursion, number problems, and algorithm optimization strategies.
+- Compared iterative, recursive, memoization, and dynamic programming approaches to reduce TLE.
+- Repository: [Python DSA Practice](https://github.com/mhnuk2007/python-dsa)
+
+### Python Learning Milestone
+- Completed a full Python path including OOP, data structures, file handling, exceptions, regex, and event-driven/polling programming.
+- Repository: [Python Learning Repository](https://github.com/mhnuk2007/learning-python)
+
+### Current DSA Focus (Java)
+- Practicing daily on LeetCode with a pattern-based plan: two pointers, sliding window, recursion, binary search, and hashing.
+- Tracking complexity for every solution and pushing clean Java implementations to GitHub.
+- LeetCode: [Profile](https://leetcode.com/u/mhnuk2007/)
+- GitHub: [Java DSA Repository](https://github.com/mhnuk2007/leetcodepractice)
 
 ---
 
@@ -41,10 +66,10 @@ const mohanLal = {
     },
     
     currentFocus: [
-        "🤖 Integrating AI/ML into Spring Boot microservices",
-        "🔍 Building semantic search engines with vector databases",
-        "☁️ Scaling cloud-native applications on Kubernetes",
-        "📚 Mastering Spring AI and LangChain4j patterns"
+        "Practicing Java DSA daily (patterns + complexity analysis)",
+        "Building C#/.NET console projects to strengthen fundamentals",
+        "Solving optimization-focused Python DSA problems",
+        "Applying algorithmic thinking to backend API design"
     ],
     
     achievements: ["AWS Emerging Talent Community Member 🏆"],
@@ -178,7 +203,7 @@ const mohanLal = {
 
 | 🔭 **Building** | 🌱 **Learning** | 🤝 **Open To** |
 |:---:|:---:|:---:|
-| AI-powered semantic search<br>with Spring Boot + pgvector | Advanced K8s patterns<br>LangChain4j & RAG systems | Full-stack collaborations<br>Cloud-native projects |
+| Java + Spring Boot backend projects<br>C#/.NET console practice repositories | Java DSA roadmap<br>Trees, Graphs, and Dynamic Programming | Backend collaborations<br>DSA-focused peer learning |
 
 </div>
 
@@ -205,11 +230,19 @@ const mohanLal = {
 
 > 🌐 **Check out my [live portfolio](https://mhnuk2007.github.io/)** for detailed project walkthroughs, case studies, and live demos
 
-**What you'll find:**
-- 🏗️ **Full-stack applications** built with Java, Spring Boot, Angular, and React
-- ☁️ **Cloud deployments** on AWS and Azure with Terraform IaC
-- 🤖 **AI integrations** featuring semantic search and vector databases
-- 📱 **Responsive web apps** with modern frontend frameworks
+**Recent repositories:**
+- [leetcodepractice](https://github.com/mhnuk2007/leetcodepractice) - Java LeetCode solutions organized by topic and difficulty
+- [learning-java](https://github.com/mhnuk2007/learning-java) - Core Java, OOP, modern Java, JDBC, and testing practice
+- [learning-dotnet](https://github.com/mhnuk2007/learning-dotnet) - C#/.NET fundamentals with hands-on console projects
+- [python-dsa](https://github.com/mhnuk2007/python-dsa) - Python DSA implementations and complexity-focused practice
+- [learning-python](https://github.com/mhnuk2007/learning-python) - Python fundamentals and structured learning notes
+- [programming-with-python](https://github.com/mhnuk2007/programming-with-python) - OpenEDG/LinkedIn Learning Python exercises
+- [html-css-javascript-revision](https://github.com/mhnuk2007/html-css-javascript-revision) - Frontend fundamentals revision repository
+- [java-junit-practice](https://github.com/mhnuk2007/java-junit-practice) - JUnit 5 unit-testing practice examples
+- [bankingapp](https://github.com/mhnuk2007/bankingapp) - Spring Boot + Angular full-stack banking application
+- [learning-angular](https://github.com/mhnuk2007/learning-angular) - Angular learning journey and feature practice
+- [user-management-backend](https://github.com/mhnuk2007/user-management-backend) - Spring Boot REST API with JPA/MySQL
+- [user-management-frontend](https://github.com/mhnuk2007/user-management-frontend) - Angular dashboard consuming backend APIs
 
 <br>
 
@@ -265,7 +298,7 @@ I've spent 10,000+ hours building real projects, debugging production issues, an
 
 <br>
 
-<sub>💙 Crafted with code and coffee • Last updated: January 2025</sub>
+<sub>💙 Crafted with code and coffee • Last updated: March 2026</sub>
 
 </div>
 
