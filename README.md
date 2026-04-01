@@ -325,4 +325,3 @@ Every repository represents a problem solved, a concept mastered, and a step for
 
 <!-- FOOTER WAVE -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,20&height=120&section=footer" />
-
