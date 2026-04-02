@@ -12,7 +12,7 @@
 [![Portfolio](https://img.shields.io/badge/🌐_Live_Portfolio-6366F1?style=for-the-badge&logoColor=white)](https://mhnuk2007.github.io/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/mhnuk2007/)
 [![LeetCode](https://img.shields.io/badge/LeetCode-Profile-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/mhnuk2007/)
-[![Email](https://img.shields.io/badge/Email_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your-email@example.com)
+[![Email](https://img.shields.io/badge/Email_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contact+mhnuk2007@example.com)
 [![AWS Community](https://img.shields.io/badge/AWS_Emerging_Talent-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://linkedin.com/in/mhnuk2007/)
 
 </div>
@@ -183,7 +183,7 @@ const mohanLal = {
 
 <!-- STATS CARDS -->
 <img src="https://github-readme-stats.vercel.app/api?username=mhnuk2007&show_icons=true&theme=react&hide_border=true&bg_color=0D1117&title_color=6366F1&icon_color=6366F1&text_color=C9D1D9&count_private=true" height="180" alt="GitHub Stats" />
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=mhnuk2007&theme=react&hide_border=true&background=0D1117&ring=6366F1&fire=6366F1&currStreakLabel=6366F1" height="180" alt="Streak Stats" />
+<img src="https://streak-stats.demolab.com?user=mhnuk2007&theme=react&hide_border=true&background=0D1117&ring=6366F1&fire=6366F1&currStreakLabel=6366F1" height="180" alt="Streak Stats (DemoLab)" />
 
 <!-- LANGUAGES -->
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mhnuk2007&layout=compact&theme=react&hide_border=true&bg_color=0D1117&title_color=6366F1&text_color=C9D1D9&langs_count=8" alt="Top Languages" />
@@ -198,6 +198,12 @@ const mohanLal = {
 ---
 
 ## 🎯 Current Mission
+
+- Building full-stack cloud-native products with Spring Boot, Angular, Kubernetes, and Terraform.
+- Solving high-impact algorithm problems daily and publishing clean Java solutions.
+- Expanding AI/ML skills through vector search, embeddings, and RAG patterns.
+- Contributing to open-source projects with modern architecture and clean engineering standards.
+- Connecting with peers for collaborative projects and mentorship.
 
 <div align="center">
 
