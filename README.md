@@ -1,5 +1,4 @@
 <div align="center">
-
 <!-- ANIMATED HEADER -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,20&height=180&section=header&text=Mohan%20Lal&fontSize=70&fontAlignY=35&animation=fadeIn&fontColor=fff&desc=Full%20Stack%20Engineer%20%7C%20Cloud%20Architect&descSize=20&descAlignY=55" />
 
