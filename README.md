@@ -307,3 +307,5 @@ I've spent 10,000+ hours building real projects, debugging production issues, an
 
 <!-- FOOTER WAVE -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,20&height=120&section=footer" />
+
+
