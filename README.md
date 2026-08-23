@@ -30,7 +30,7 @@
 
 ### Eclipse JNoSQL
 
-Contributing to the Jakarta NoSQL ecosystem through bug investigation, regression testing, and production fixes.
+Contributing to the Jakarta NoSQL ecosystem through bug investigation, root-cause analysis, regression testing, and production fixes.
 
 #### 🐛 Fixed `Page.totalElements()` Access Outside Transactions
 
@@ -39,11 +39,12 @@ Contributing to the Jakarta NoSQL ecosystem through bug investigation, regressio
 Identified and fixed an issue where `Page.totalElements()` could fail after an automatically created repository transaction had completed.
 
 **What I contributed:**
-- Traced the transaction lifecycle around repository method execution.
-- Identified that `Page` content was eagerly loaded, while totals remained lazy.
-- Updated `EnsureTransactionInterceptor` to evaluate `totalElements()` while the automatically created transaction was still active.
-- Added `PageOutsideTransactionTest` as a regression test.
-- Fix merged into the `1.1.x` branch.
+
+* Traced the transaction lifecycle around repository method execution.
+* Identified that `Page` content was eagerly loaded, while totals remained lazy.
+* Updated `EnsureTransactionInterceptor` to evaluate `totalElements()` while the automatically created transaction was still active.
+* Added `PageOutsideTransactionTest` as a regression test.
+* Fix merged into the `1.1.x` branch.
 
 **Result:** `Page.totalElements()` can safely be accessed after the repository call returns.
 
@@ -58,30 +59,102 @@ Identified and fixed an issue where `Page.totalElements()` could fail after an a
 After a major Jakarta Persistence refactoring, I ported the regression scenario from the `1.1.x` fix to the `main` branch.
 
 **What I contributed:**
-- Adapted the regression test to the new `1.2.0-SNAPSHOT` implementation.
-- Verified `Page.totalElements()` remains accessible without an active transaction.
-- Reused the repository-level scenario against the refactored implementation.
-- Added permanent regression coverage for the behavior on `main`.
+
+* Adapted the regression test to the new `1.2.0-SNAPSHOT` implementation.
+* Verified `Page.totalElements()` remains accessible without an active transaction.
+* Reused the repository-level scenario against the refactored implementation.
+* Added permanent regression coverage for the behavior on `main`.
 
 🔗 [Merged PR #210](https://github.com/eclipse-jnosql/jnosql-extensions/pull/210)
 
-> Maintainers confirmed the regression test passes after the major Jakarta Persistence refactoring.
+> Maintainers confirmed that the regression scenario remained valid after the Jakarta Persistence refactoring.
 
 ---
 
-#### 🔧 Diagnosed and Proposed a Fix for a ConstructorBuilder Class-Loading Race
+#### 🔧 Fixed `ConstructorBuilder` ServiceLoader Lookup on `1.1.x`
 
-**JNoSQL — Issue #631 / PR #765 · Open**
+**JNoSQL — Issue #631 / PR #765 · Merged**
 
-Investigated an intermittent `NoSQLException` reported in a reactive Quarkus application, where entity construction failed depending on which thread first initialized the JNoSQL mapping engine.
+Investigated a `NoSQLException` reported in a reactive Quarkus application where `ConstructorBuilderSupplier` could not be discovered during initialization.
+
+The issue was traced to `ServiceLoader` lookup through the thread context class loader (TCCL). In environments where the initializing thread's TCCL could not see the provider, `ConstructorBuilder` failed during static initialization.
 
 **What I contributed:**
-- Built minimal reproducers (standalone and Quarkus/Vert.x-based) to isolate the failure to a thread-context-classloader race during static initialization.
-- Designed and implemented a TCCL-first-with-fallback `ServiceLoader` lookup strategy, preserving normal behavior for application servers, OSGi, and Quarkus.
-- Validated the fix across isolated JVM forks, the full module test suite, and an independent downstream reproducer project.
-- Separated a related `CompletionStage` repository-return capability into its own PR (#764) to keep each change independently reviewable.
 
-🔗 [Issue #631](https://github.com/eclipse-jnosql/jnosql/issues/631) · [PR #765](https://github.com/eclipse-jnosql/jnosql/pull/765) · [PR #764](https://github.com/eclipse-jnosql/jnosql/pull/764)
+* Investigated the failure using standalone and Quarkus/Vert.x-based reproducer projects.
+* Isolated the problem to `ServiceLoader` provider discovery and class-loader visibility during `ConstructorBuilder` initialization.
+* Implemented a **TCCL-first with defining-class-loader fallback** strategy.
+* Preserved normal TCCL-based provider discovery where available.
+* Added regression coverage using an isolated TCCL that cannot access the provider.
+* Validated the fix against dedicated regression tests, the complete module test suite, and downstream reproducer scenarios.
+
+**Result:** `ConstructorBuilderSupplier` can still be discovered when the current thread's context class loader cannot see the provider.
+
+🔗 [Issue #631](https://github.com/eclipse-jnosql/jnosql/issues/631) · [Merged PR #765](https://github.com/eclipse-jnosql/jnosql/pull/765)
+
+---
+
+#### 🚀 Applied the `ConstructorBuilder` Fix to the Main Branch
+
+**JNoSQL — PR #768 · Open**
+
+Applied the same `ConstructorBuilder` ServiceLoader fix to the `main` branch, which targets the Jakarta EE 12 line.
+
+**What I contributed:**
+
+* Added the TCCL-first provider lookup strategy to the current `main` implementation.
+* Falls back to `ConstructorBuilder.class.getClassLoader()` when the TCCL is `null` or cannot discover a provider.
+* Added a dedicated regression test that initializes `ConstructorBuilder` with an isolated TCCL.
+* Verified that the fallback path successfully discovers the provider.
+* Ran the complete `jnosql-mapping-api-core` test suite.
+
+**Validation:**
+
+```text
+Dedicated regression test:
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+Complete module test suite:
+Tests run: 67, Failures: 0, Errors: 0, Skipped: 0
+
+Checkstyle: 0 violations
+Apache RAT: 0 unapproved files
+Java 21 CI: Passed
+Java 25 CI: Passed
+Eclipse Contributor Agreement check: Passed
+```
+
+🔗 [PR #768](https://github.com/eclipse-jnosql/jnosql/pull/768)
+
+---
+
+#### ⚡ Added `CompletionStage` Repository Return Support
+
+**JNoSQL — PR #764 · Open**
+
+Worked on support for asynchronous repository methods returning `CompletionStage` types.
+
+**What I contributed:**
+
+* Added handling for `CompletionStage<T>`.
+* Added support for `CompletionStage<List<T>>`.
+* Added support for `CompletionStage<Optional<T>>`.
+* Added regression coverage for asynchronous repository return types.
+* Kept this capability change separate from the class-loader fix so each change can be reviewed independently.
+
+🔗 [PR #764](https://github.com/eclipse-jnosql/jnosql/pull/764)
+
+---
+
+#### 🔍 Investigated Common Class-Loader and `ServiceLoader` Handling
+
+**JNoSQL — Issue #766 · Investigation and Local Implementation**
+
+Investigated opportunities to centralize repeated class-loader and `ServiceLoader` handling across the project.
+
+The work explores extracting common lookup behavior into a reusable utility while keeping targeted bug fixes independently reviewable.
+
+🔗 [Issue #766](https://github.com/eclipse-jnosql/jnosql/issues/766)
 
 ---
 
@@ -94,15 +167,17 @@ Investigated an intermittent `NoSQLException` reported in a reactive Quarkus app
 Implemented a new immutable domain model for aggregating Spring bean-definition metrics.
 
 **What I contributed:**
-- Added the immutable `BeanDefinitionSummary` Java record.
-- Implemented defensive copying using `Map.copyOf()`.
-- Added null-safe handling for distribution maps.
-- Added validation for non-negative bean definition totals.
-- Introduced the `LoadingMode` enum with `EAGER` and `LAZY` values after identifying a missing dependency in the original issue specification.
-- Added comprehensive unit tests for validation, immutability, null handling, and `empty()`.
-- Added JavaDoc for the model and factory method.
+
+* Added the immutable `BeanDefinitionSummary` Java record.
+* Implemented defensive copying using `Map.copyOf()`.
+* Added null-safe handling for distribution maps.
+* Added validation for non-negative bean definition totals.
+* Introduced the `LoadingMode` enum with `EAGER` and `LAZY` values after identifying a missing dependency in the original issue specification.
+* Added comprehensive unit tests for validation, immutability, null handling, and `empty()`.
+* Added JavaDoc for the model and factory method.
 
 **Testing:**
+
 ```text
 mvn -pl spring-lens-core test
 BeanDefinitionSummaryTest: 5 tests passed
@@ -116,13 +191,31 @@ BeanDefinitionSummaryTest: 5 tests passed
 
 ### 📌 Open Source Impact
 
-|         🐛 Bug Fix        |         🧪 Regression Testing         |  🏗️ Domain Modeling  |     🔍 Root-Cause Diagnosis     |
-| :-----------------------: | :-----------------------------------: | :-------------------: | :------------------------------: |
-|     JNoSQL Extensions     |           JNoSQL Extensions           |      Spring Lens      |             JNoSQL               |
-| Transaction lifecycle fix | Jakarta Persistence refactor coverage | Immutable Java record | Classloader race in entity mapping |
-|        **PR #209**        |              **PR #210**              |      **PR #270**      |         **Issue #631 / PR #765** |
+| 🐛 Production Bug Fix |    🧪 Regression Coverage    |        🔧 Class-Loader Fix       | ⚡ Async Repository Support |  🏗️ Domain Modeling  |
+| :-------------------: | :--------------------------: | :------------------------------: | :------------------------: | :-------------------: |
+|   JNoSQL Extensions   |       JNoSQL Extensions      |              JNoSQL              |           JNoSQL           |      Spring Lens      |
+| Transaction lifecycle | Jakarta Persistence refactor |     `ServiceLoader` fallback     |  `CompletionStage` returns | Immutable Java record |
+|  **PR #209 · Merged** |     **PR #210 · Merged**     | **PR #765 · Merged / #768 Open** |     **PR #764 · Open**     |  **PR #270 · Merged** |
 
 </div>
+
+---
+
+## 🌱 What Open Source Has Taught Me
+
+Open source has changed the way I approach software engineering.
+
+It has pushed me beyond simply writing code that works. I have learned to investigate unfamiliar codebases, reproduce difficult failures, trace framework behavior, understand class loaders and transaction lifecycles, write regression tests, respond to review feedback, and maintain changes across multiple release branches.
+
+The most valuable lesson has been simple:
+
+> **Confidence does not always come before difficult work. Sometimes confidence is built by doing the difficult work you initially think you are not ready for.**
+
+Every issue investigated, reproducer built, failed hypothesis, regression test, review, and merged pull request has made me a better engineer.
+
+I started contributing to learn from established open-source projects. Along the way, I discovered that I could investigate real problems, understand complex systems, and contribute meaningful fixes.
+
+**Open source did not just improve my GitHub profile — it improved my confidence as an engineer.**
 
 ---
 
