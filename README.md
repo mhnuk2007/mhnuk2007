@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- ANIMATED HEADER -->
-<img src="https://capsule-render.vercel.app/api?type=waving&amp;height=180&amp;text=Mohan%20Lal" alt="Mohan Lal" />
+<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=gradient&amp;customColorList=6,12,20&amp;height=180&amp;section=header&amp;text=Mohan%20Lal&amp;fontSize=70&amp;fontAlignY=35&amp;animation=fadeIn&amp;fontColor=FFFFFF" alt="Mohan Lal - Java and Spring Boot Engineer" />
 
 <!-- TYPING ANIMATION -->
 <img src="https://readme-typing-svg.herokuapp.com/?font=Fira+Code&weight=600&size=28&pause=1000&color=6366F1&center=true&vCenter=true&width=800&lines=Java+%26+Spring+Boot+Engineer;Java+Full+Stack+Developer;Open+Source+Contributor+%7C+Eclipse+JNoSQL;Jakarta+EE+%7C+Jakarta+NoSQL;Microservices+%7C+Docker+%7C+Kubernetes;Cloud-Native+Development+%7C+AWS;Building+AI-Powered+Applications" alt="Mohan Lal - Java and Spring Boot Engineer" />
