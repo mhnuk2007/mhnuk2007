@@ -29,11 +29,11 @@
 
 # 👋 Hi, I'm Mohan Lal
 
-**Mohan Lal (`mhnuk2007`) is a Java and Spring Boot Engineer and Open Source Contributor focused on backend engineering, microservices, cloud-native systems, and modern full-stack development.**
+I'm a **Java and Spring Boot Engineer and Open Source Contributor** focused on backend engineering, microservices, cloud-native systems, and modern full-stack development.
 
 My primary backend stack is **Java and Spring Boot**, with hands-on experience in REST APIs, microservices, databases, security, testing, Docker, Kubernetes, AWS, Terraform, and AI-powered applications.
 
-I also contribute to open-source projects in the Java ecosystem, including **Eclipse JNoSQL** and **Spring-related projects**, where I investigate real issues, build reproducible test cases, implement fixes, and contribute regression tests.
+I contribute to open-source projects in the Java ecosystem, including **Eclipse JNoSQL** and **Spring-related projects**, where I investigate real issues, build reproducible test cases, implement fixes, and contribute regression tests.
 
 ### 🔎 Core Focus
 
