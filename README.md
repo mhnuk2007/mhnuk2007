@@ -6,62 +6,154 @@
 
 <!-- TYPING ANIMATION -->
 
-<img src="https://readme-typing-svg.herokuapp.com/?font=Fira+Code&weight=600&size=28&pause=1000&color=6366F1&center=true&vCenter=true&width=800&lines=Java+%26+Spring+Boot+Engineer;Java+Full+Stack+Developer;Open+Source+Contributor+%7C+Eclipse+JNoSQL;Jakarta+EE+%7C+Jakarta+NoSQL;Microservices+%7C+Docker+%7C+Kubernetes;Cloud-Native+Development+%7C+AWS;Building+AI-Powered+Applications" alt="Mohan Lal - Java and Spring Boot Engineer" />
+<img src="https://readme-typing-svg.herokuapp.com/?font=Fira+Code&weight=600&size=28&pause=1000&color=6366F1&center=true&vCenter=true&width=800&lines=Java+%26+Spring+Boot+Engineer;Java+Full+Stack+Developer;Open+Source+Contributor+%7C+Eclipse+JNoSQL;Jakarta+EE+%7C+Jakarta+Data+%7C+Jakarta+NoSQL;Microservices+%7C+Docker+%7C+Kubernetes;Cloud-Native+Development+%7C+AWS;Building+AI-Powered+Applications" alt="Mohan Lal - Java and Spring Boot Engineer" />
 
 <br><br>
 
 <!-- SOCIAL BADGES -->
 
-[![Portfolio](https://img.shields.io/badge/🌐_Live_Portfolio-6366F1?style=for-the-badge\&logoColor=white)](https://mhnuk2007.github.io/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge\&logo=linkedin\&logoColor=white)](https://linkedin.com/in/mhnuk2007/)
-[![LeetCode](https://img.shields.io/badge/LeetCode-Profile-FFA116?style=for-the-badge\&logo=leetcode\&logoColor=white)](https://leetcode.com/u/mhnuk2007/)
-[![GitHub](https://img.shields.io/badge/GitHub-mhnuk2007-181717?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/mhnuk2007)
+[![Portfolio](https://img.shields.io/badge/🌐_Live_Portfolio-6366F1?style=for-the-badge&logoColor=white)](https://mhnuk2007.github.io/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/mhnuk2007/)
+[![LeetCode](https://img.shields.io/badge/LeetCode-Profile-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/mhnuk2007/)
+[![GitHub](https://img.shields.io/badge/GitHub-mhnuk2007-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mhnuk2007)
 
 </div>
 
 <br>
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=mhnuk2007&label=Profile%20Views&color=6366f1&style=flat-square" alt="GitHub profile views for mhnuk2007" />
+
+<img src="https://komarev.com/ghpvc/?username=mhnuk2007&label=Profile%20Views&color=6366f1&style=flat-square" alt="GitHub profile views for mhnuk2007" />
+
 </div>
 
 ---
 
 # 👋 Hi, I'm Mohan Lal
 
-I'm a **Java and Spring Boot Engineer and Open Source Contributor** focused on backend engineering, microservices, cloud-native systems, and modern full-stack development.
+I'm a **Java and Spring Boot Engineer and Open Source Contributor** focused on backend engineering, microservices, enterprise Java, cloud-native systems, and modern full-stack development.
 
 My primary backend stack is **Java and Spring Boot**, with hands-on experience in REST APIs, microservices, databases, security, testing, Docker, Kubernetes, AWS, Terraform, and AI-powered applications.
 
-I contribute to open-source projects in the Java ecosystem, including **Eclipse JNoSQL, Jakarta EE, Jakarta Agentic AI, and Spring-related projects**, where I investigate real issues, build reproducible test cases, implement fixes, contribute regression tests, and improve maintainability.
+I contribute to open-source projects in the Java ecosystem, including **Eclipse JNoSQL, Jakarta EE, Jakarta Data, Jakarta Agentic AI, and Spring-related projects**, where I investigate real issues, build reproducible test cases, implement fixes, contribute regression and TCK tests, and improve maintainability.
 
 ### 🔎 Core Focus
 
-* **Java & Spring Boot**
-* **Spring Framework & Spring Security**
-* **Microservices & REST APIs**
-* **Jakarta EE & Jakarta NoSQL**
-* **Eclipse JNoSQL**
-* **Jakarta Agentic AI**
-* **PostgreSQL & MySQL**
-* **Docker & Kubernetes**
-* **AWS & Terraform**
-* **Angular, React & Next.js**
-* **Spring AI & AI-powered applications**
-* **Data structures & algorithms**
+- **Java & Spring Boot**
+- **Spring Framework & Spring Security**
+- **Microservices & REST APIs**
+- **Jakarta EE & Jakarta Data**
+- **Jakarta Persistence & Jakarta NoSQL**
+- **Eclipse JNoSQL**
+- **Jakarta Agentic AI**
+- **PostgreSQL & MySQL**
+- **Docker & Kubernetes**
+- **AWS & Terraform**
+- **Angular, React & Next.js**
+- **Spring AI & AI-powered applications**
+- **Data structures & algorithms**
 
 > **GitHub:** [`mhnuk2007`](https://github.com/mhnuk2007)
-> **Primary focus:** Java • Spring Boot • Microservices • Cloud • Open Source
+> **Primary focus:** Java • Spring Boot • Microservices • Jakarta EE • Cloud • Open Source
 
 ---
 
-## 🌟 Open Source Contributions
+# 🌟 Open Source Contributions
 
-### Eclipse JNoSQL
+## 🌐 Jakarta Data
+
+Contributing to **Jakarta Data** through TCK development, asynchronous behavior testing, transaction semantics, and compatibility-oriented test coverage.
+
+### 🧪 Added TCK Coverage for Exceptional Async Completion
+
+**Jakarta Data — PR #1556 · Merged**
+
+Added TCK coverage verifying that an asynchronous repository operation completes exceptionally when an insert violates an existing entity constraint.
+
+**What I contributed:**
+
+- Tested exceptional `CompletionStage` completion.
+- Verified `EntityExistsException` as the underlying cause.
+- Added regression coverage for asynchronous repository behavior.
+- Validated the test against Open Liberty.
+- Incorporated review feedback and finalized the portable TCK scenario.
+
+**Validation:**
+
+```text
+mvn clean verify — successful
+Open Liberty execution — successful
+```
+
+🔗 [Issue #19](https://github.com/jakartaee/data/issues/19) · [Merged PR #1556](https://github.com/jakartaee/data/pull/1556)
+
+---
+
+### 🔍 Added TCK Coverage for `QueryOptions` on `JakartaQuery`
+
+**Jakarta Data — PR #1561 · Merged**
+
+Added TCK coverage for:
+
+```java
+@QueryOptions(flush = QueryFlushMode.FLUSH)
+```
+
+on a repository method using `@JakartaQuery`.
+
+The test verifies that a pending entity modification becomes visible to the repository operation within an active transaction without an explicit flush.
+
+**What I contributed:**
+
+- Added a `@JakartaQuery` repository scenario.
+- Added `QueryOptions` / `QueryFlushMode.FLUSH` coverage.
+- Designed the test around portable Jakarta Data transaction semantics.
+- Revised the test based on TCK review feedback.
+- Verified the scenario against a development Open Liberty environment.
+
+🔗 [Merged PR #1561](https://github.com/jakartaee/data/pull/1561)
+
+---
+
+### 🧪 Added `QueryOptions` TCK Coverage for Find, Query, Delete & NativeQuery
+
+**Jakarta Data — PR #1567 · Open**
+
+Added the remaining `@QueryOptions` scenarios from Jakarta Data issue #965:
+
+- `@Find`
+- `@Query`
+- `@Delete`
+- `@NativeQuery`
+
+Each test verifies that a pending entity modification becomes visible to the repository operation when using:
+
+```java
+@QueryOptions(flush = QueryFlushMode.FLUSH)
+```
+
+**What I contributed:**
+
+- Added `@Find` + `QueryOptions` coverage.
+- Added `@Query` + `QueryOptions` coverage.
+- Added `@Delete` + `QueryOptions` coverage.
+- Added `@NativeQuery` + `QueryOptions` coverage.
+- Designed the scenarios around active transaction semantics.
+- Kept the tests portable and independent of a particular `EntityManager`.
+- Validated compilation and formatting.
+- All PR checks are currently passing.
+
+**Status:** Open — awaiting review.
+
+🔗 [Issue #965](https://github.com/jakartaee/data/issues/965) · [PR #1567](https://github.com/jakartaee/data/pull/1567)
+
+---
+
+## 🌐 Eclipse JNoSQL
 
 Contributing to the Jakarta NoSQL ecosystem through bug investigation, root-cause analysis, reproducible testing, regression coverage, production fixes, reusable utilities, and maintainability improvements.
 
-#### 🐛 Fixed `Page.totalElements()` Access Outside Transactions
+### 🐛 Fixed `Page.totalElements()` Access Outside Transactions
 
 **JNoSQL Extensions — PR #209 · Merged**
 
@@ -69,11 +161,11 @@ Identified and fixed an issue where `Page.totalElements()` could fail after an a
 
 **What I contributed:**
 
-* Traced the transaction lifecycle around repository method execution.
-* Identified that `Page` content was eagerly loaded while totals remained lazy.
-* Updated `EnsureTransactionInterceptor` to evaluate `totalElements()` while the automatically created transaction was still active.
-* Added `PageOutsideTransactionTest` as a regression test.
-* Contributed the fix to the `1.1.x` branch.
+- Traced the transaction lifecycle around repository method execution.
+- Identified that `Page` content was eagerly loaded while totals remained lazy.
+- Updated `EnsureTransactionInterceptor` to evaluate `totalElements()` while the automatically created transaction was still active.
+- Added `PageOutsideTransactionTest` as a regression test.
+- Contributed the fix to the `1.1.x` branch.
 
 **Result:** `Page.totalElements()` can safely be accessed after the repository call returns.
 
@@ -81,7 +173,7 @@ Identified and fixed an issue where `Page.totalElements()` could fail after an a
 
 ---
 
-#### 🧪 Ported Regression Coverage to the Main Branch
+### 🧪 Ported Regression Coverage to the Main Branch
 
 **JNoSQL Extensions — PR #210 · Merged**
 
@@ -89,16 +181,16 @@ After a major Jakarta Persistence refactoring, I ported the regression scenario 
 
 **What I contributed:**
 
-* Adapted the regression test to the new implementation.
-* Verified that `Page.totalElements()` remains accessible without an active transaction.
-* Reused the repository-level scenario against the refactored implementation.
-* Added permanent regression coverage to `main`.
+- Adapted the regression test to the new implementation.
+- Verified that `Page.totalElements()` remains accessible without an active transaction.
+- Reused the repository-level scenario against the refactored implementation.
+- Added permanent regression coverage to `main`.
 
 🔗 [Merged PR #210](https://github.com/eclipse-jnosql/jnosql-extensions/pull/210)
 
 ---
 
-#### 🔧 Fixed `ConstructorBuilder` ServiceLoader Lookup
+### 🔧 Fixed `ConstructorBuilder` ServiceLoader Lookup
 
 **JNoSQL — Issue #631 / PR #765 · Merged**
 
@@ -108,12 +200,12 @@ The issue was traced to **Java `ServiceLoader` provider discovery and thread con
 
 **What I contributed:**
 
-* Investigated the failure using standalone and Quarkus/Vert.x reproducer projects.
-* Isolated the problem to `ServiceLoader` provider discovery and class-loader visibility.
-* Implemented a **TCCL-first with defining-class-loader fallback** strategy.
-* Preserved normal TCCL-based provider discovery where available.
-* Added regression coverage using an isolated TCCL.
-* Validated the fix with dedicated regression tests and downstream reproducer scenarios.
+- Investigated the failure using standalone and Quarkus/Vert.x reproducer projects.
+- Isolated the problem to `ServiceLoader` provider discovery and class-loader visibility.
+- Implemented a **TCCL-first with defining-class-loader fallback** strategy.
+- Preserved normal TCCL-based provider discovery where available.
+- Added regression coverage using an isolated TCCL.
+- Validated the fix with dedicated regression tests and downstream reproducer scenarios.
 
 **Result:** `ConstructorBuilderSupplier` can still be discovered when the current thread's context class loader cannot see the provider.
 
@@ -121,7 +213,7 @@ The issue was traced to **Java `ServiceLoader` provider discovery and thread con
 
 ---
 
-#### 🚀 Applied the `ConstructorBuilder` Fix to the Main Branch
+### 🚀 Applied the `ConstructorBuilder` Fix to the Main Branch
 
 **JNoSQL — PR #768 · Merged**
 
@@ -129,11 +221,11 @@ Applied the same `ConstructorBuilder` `ServiceLoader` fix to the `main` branch t
 
 **What I contributed:**
 
-* Added the TCCL-first provider lookup strategy.
-* Added fallback to `ConstructorBuilder.class.getClassLoader()`.
-* Added a dedicated regression test using an isolated TCCL.
-* Verified provider discovery through the fallback path.
-* Ran the complete `jnosql-mapping-api-core` test suite.
+- Added the TCCL-first provider lookup strategy.
+- Added fallback to `ConstructorBuilder.class.getClassLoader()`.
+- Added a dedicated regression test using an isolated TCCL.
+- Verified provider discovery through the fallback path.
+- Ran the complete `jnosql-mapping-api-core` test suite.
 
 **Validation:**
 
@@ -155,7 +247,7 @@ Eclipse Contributor Agreement check: Passed
 
 ---
 
-#### ⚡ Added `CompletionStage` Repository Return Support
+### ⚡ Added `CompletionStage` Repository Return Support
 
 **JNoSQL — PR #764 · Merged**
 
@@ -163,39 +255,37 @@ Worked on support for asynchronous repository methods returning `CompletionStage
 
 **What I contributed:**
 
-* Added support for `CompletionStage<T>`.
-* Added support for `CompletionStage<List<T>>`.
-* Added support for `CompletionStage<Optional<T>>`.
-* Added support for `CompletionStage<Page<T>>`.
-* Added regression coverage for asynchronous repository return types.
-* Kept the asynchronous capability change separate from the class-loader fix.
+- `CompletionStage<T>`
+- `CompletionStage<List<T>>`
+- `CompletionStage<Optional<T>>`
+- `CompletionStage<Page<T>>`
+- Regression coverage for asynchronous repository return types.
+- Kept the asynchronous capability change separate from the class-loader fix.
 
 🔗 [Merged PR #764](https://github.com/eclipse-jnosql/jnosql/pull/764)
 
 ---
 
-#### 🔍 Investigated Common Class-Loader and `ServiceLoader` Handling
+### 🔍 Investigated Common Class-Loader and `ServiceLoader` Handling
 
 **JNoSQL — Issue #766 → PR #769**
 
-After investigating repeated class-loader and `ServiceLoader` handling patterns, I worked on extracting common provider-loading behavior into a reusable utility.
+After investigating repeated class-loader and `ServiceLoader` handling patterns, I worked on extracting common provider-loading behavior into reusable infrastructure.
 
 **What I contributed:**
 
-* Investigated repeated `ServiceLoader` lookup patterns across the project.
-* Designed a reusable `ServiceLoaderUtils.loadFirst(...)` utility.
-* Centralized common provider-discovery behavior.
-* Added tests covering the utility's provider-loading behavior.
-* Exported the `org.eclipse.jnosql.communication.util` package where required.
-* Kept the reusable utility separate from the targeted `ConstructorBuilder` bug fix.
-
-**Result:** Common `ServiceLoader` lookup behavior can be reused instead of being independently implemented across different parts of the project.
+- Investigated repeated `ServiceLoader` lookup patterns.
+- Designed reusable provider-discovery behavior.
+- Added tests covering provider loading.
+- Migrated affected consumers.
+- Preserved class-loader fallback behavior.
+- Kept the reusable utility separate from the targeted `ConstructorBuilder` bug fix.
 
 🔗 [Issue #766](https://github.com/eclipse-jnosql/jnosql/issues/766) · [PR #769](https://github.com/eclipse-jnosql/jnosql/pull/769)
 
 ---
 
-#### 📜 Updated JNoSQL License Headers
+### 📜 Updated JNoSQL License Headers
 
 **JNoSQL — PR #770 · Merged**
 
@@ -203,18 +293,16 @@ Contributed a project-wide license-header update to align source files with the 
 
 **What I contributed:**
 
-* Updated affected source-file license headers.
-* Applied the required Eclipse Public License 2.0 / Apache License 2.0 notices.
-* Preserved the project's existing licensing structure.
-* Validated the changes with the project's compliance checks.
-
-**Result:** The affected source files use the correct project license notices.
+- Updated affected source-file license headers.
+- Applied the required Eclipse Public License 2.0 / Apache License 2.0 notices.
+- Preserved the project's existing licensing structure.
+- Validated the changes with compliance checks.
 
 🔗 [Merged PR #770](https://github.com/eclipse-jnosql/jnosql/pull/770)
 
 ---
 
-## 🤖 Jakarta Agentic AI
+# 🤖 Jakarta Agentic AI
 
 Contributing to the **Jakarta Agentic AI** project through practical improvements to example applications and domain models.
 
@@ -226,52 +314,37 @@ Updated the fraud-detection example's `BankTransaction` model to represent monet
 
 **What I contributed:**
 
-* Replaced the simplistic monetary representation with JSR 354 `MonetaryAmount`.
-* Added the required `javax.money:money-api:1.1` dependency.
-* Added basic getters and setters for the transaction fields.
-* Updated the fraud-detection example to use the monetary value type.
-* Verified the implementation with the project's Maven build and tests.
-* Kept the change focused on the requested domain-model improvement.
-
-**Validation:**
-
-```text
-git diff --check
-
-mvn -pl examples/fraud-detection -am clean test
-
-Build completed successfully.
-```
-
-**Result:** `BankTransaction` now models monetary values using the standard Java Money API rather than a simplistic numeric representation.
+- Replaced the simplistic monetary representation with JSR 354 `MonetaryAmount`.
+- Added the required Money API dependency.
+- Updated the transaction domain model.
+- Added getters and setters.
+- Verified the implementation with Maven tests.
 
 🔗 [Issue #11](https://github.com/jakartaee/agentic-ai/issues/11) · [Merged PR #59](https://github.com/jakartaee/agentic-ai/pull/59)
 
 ---
 
-## 🌱 Spring Lens
+# 🌱 Spring Lens
 
 ### ✨ Implemented `BeanDefinitionSummary`
 
 **Spring Lens — Issue #269 / PR #270 · Merged**
 
-Implemented a new immutable domain model for aggregating Spring bean-definition metrics.
+Implemented an immutable domain model for aggregating Spring bean-definition metrics.
 
 **What I contributed:**
 
-* Added the immutable `BeanDefinitionSummary` Java record.
-* Implemented defensive copying using `Map.copyOf()`.
-* Added null-safe handling for distribution maps.
-* Added validation for non-negative bean-definition totals.
-* Introduced `LoadingMode` with `EAGER` and `LAZY` values.
-* Added comprehensive unit tests.
-* Added JavaDoc for the model and factory method.
+- Added the immutable `BeanDefinitionSummary` Java record.
+- Implemented defensive copying using `Map.copyOf()`.
+- Added null-safe handling for distribution maps.
+- Added validation for non-negative bean-definition totals.
+- Introduced `LoadingMode` with `EAGER` and `LAZY` values.
+- Added comprehensive unit tests.
+- Added JavaDoc for the model and factory method.
 
 **Testing:**
 
 ```text
-mvn -pl spring-lens-core test
-
 BeanDefinitionSummaryTest:
 5 tests passed
 ```
@@ -280,25 +353,30 @@ BeanDefinitionSummaryTest:
 
 ---
 
-<div align="center">
+# 📌 Open Source Impact
 
-### 📌 Open Source Impact
-
-|   🐛 Transaction Fix  | 🧪 Regression Coverage |     🔧 Class-Loader Fix     |  ⚡ Async Repository  | 🔍 ServiceLoader Utility |  💰 Java Money API  |  🏗️ Domain Modeling  | 📜 License Maintenance |
-| :-------------------: | :--------------------: | :-------------------------: | :------------------: | :----------------------: | :-----------------: | :-------------------: | :--------------------: |
-|   JNoSQL Extensions   |    JNoSQL Extensions   |            JNoSQL           |        JNoSQL        |          JNoSQL          |  Jakarta Agentic AI |      Spring Lens      |         JNoSQL         |
-| Transaction lifecycle |   Jakarta Persistence  |   `ServiceLoader` fallback  |   `CompletionStage`  |   `ServiceLoaderUtils`   |       JSR 354       | Immutable Java record |   EPL/Apache notices   |
-|  **PR #209 · Merged** |  **PR #210 · Merged**  | **PR #765 & #768 · Merged** | **PR #764 · Merged** |        **PR #769**       | **PR #59 · Merged** |  **PR #270 · Merged** |  **PR #770 · Merged**  |
-
-</div>
+| Contribution | Project | Focus | Status |
+|---|---|---|---|
+| Transaction lifecycle fix | JNoSQL Extensions | `Page.totalElements()` | PR #209 · Merged |
+| Regression coverage | JNoSQL Extensions | Jakarta Persistence | PR #210 · Merged |
+| Class-loader fix | JNoSQL | `ServiceLoader` / TCCL | PR #765 · Merged |
+| Main branch fix | JNoSQL | `ServiceLoader` / TCCL | PR #768 · Merged |
+| Async repository support | JNoSQL | `CompletionStage` | PR #764 · Merged |
+| Service discovery utility | JNoSQL | Provider discovery | PR #769 |
+| Jakarta Data TCK | Jakarta Data | Async exceptions | PR #1556 · Merged |
+| Jakarta Data TCK | Jakarta Data | `QueryOptions` / `JakartaQuery` | PR #1561 · Merged |
+| Jakarta Data TCK | Jakarta Data | `Find` / `Query` / `Delete` / `NativeQuery` | PR #1567 · Open |
+| Domain modeling | Jakarta Agentic AI | JSR 354 | PR #59 · Merged |
+| Domain modeling | Spring Lens | Immutable Java record | PR #270 · Merged |
+| License maintenance | JNoSQL | EPL/Apache notices | PR #770 · Merged |
 
 ---
 
-## 💡 What Open Source Has Taught Me
+# 💡 What Open Source Has Taught Me
 
 Open source has changed the way I approach software engineering.
 
-It has pushed me beyond simply writing code that works. I have learned to investigate unfamiliar codebases, reproduce difficult failures, trace framework behavior, understand class loaders and transaction lifecycles, work with Java platform APIs, write regression tests, respond to review feedback, extract reusable utilities, and maintain changes across multiple release branches.
+It has pushed me beyond simply writing code that works. I have learned to investigate unfamiliar codebases, reproduce difficult failures, trace framework behavior, understand class loaders and transaction lifecycles, work with Java platform APIs, write regression and TCK tests, respond to review feedback, extract reusable utilities, and maintain changes across multiple release branches.
 
 The most valuable lesson has been simple:
 
@@ -312,223 +390,225 @@ I started contributing to learn from established open-source projects. Along the
 
 ---
 
-## 📚 Current Learning & Development
+# 📚 Current Learning & Development
 
 ### ☕ Java & Spring Boot
 
 My primary development focus is **Java and Spring Boot**, with continued work in:
 
-* Spring Boot
-* Spring Security
-* REST APIs
-* Microservices
-* Persistence
-* Testing
-* Cloud-native applications
-* AI integration
+- Spring Boot
+- Spring Framework
+- Spring Security
+- REST APIs
+- Microservices
+- Persistence
+- Testing
+- Cloud-native applications
+- AI integration
 
-### 🧩 Jakarta EE & JNoSQL
+### 🧩 Jakarta EE, Jakarta Data & JNoSQL
 
 Continuing to learn and contribute to the Jakarta ecosystem through hands-on work with:
 
-* Jakarta EE
-* Jakarta Persistence
-* Jakarta NoSQL
-* Eclipse JNoSQL
-* `ServiceLoader` / `ServiceLoaderUtils`
-* Asynchronous repository APIs / `CompletionStage`
-* Transaction management
-* Java class-loader behavior
-* Repository abstractions
+- Jakarta EE
+- Jakarta Data
+- Jakarta Persistence
+- Jakarta NoSQL
+- Eclipse JNoSQL
+- TCK development
+- `ServiceLoader` and class-loader behavior
+- Transaction management
+- Repository abstractions
+- Asynchronous repository APIs
+- `CompletionStage`
 
-### 🤖 Jakarta Agentic AI
+### 🤖 Jakarta Agentic AI & AI Engineering
 
-Exploring practical AI application development within the Jakarta ecosystem while contributing improvements to real project examples.
+Exploring practical AI application development through:
 
-Current interests include:
-
-* Agentic AI applications
-* Jakarta EE
-* Java-based AI systems
-* Realistic domain modeling
-* Enterprise application architecture
+- Jakarta Agentic AI
+- Spring AI
+- Agentic AI applications
+- Java-based AI systems
+- Enterprise AI architecture
+- Vector search
+- Embeddings
+- Retrieval-Augmented Generation
 
 ### 🧠 Data Structures & Algorithms
 
-Practicing algorithmic problem solving with Java and tracking:
+Practicing algorithmic problem solving with Java:
 
-* Time complexity
-* Space complexity
-* Pattern recognition
-* Dynamic programming
-* Sliding window
-* Two pointers
-* Binary search
-* Hashing
-* Trees and graphs
+- Time complexity
+- Space complexity
+- Pattern recognition
+- Dynamic programming
+- Sliding window
+- Two pointers
+- Binary search
+- Hashing
+- Trees and graphs
 
-LeetCode: [@mhnuk2007](https://leetcode.com/u/mhnuk2007/)
-Java DSA: [leetcodepractice](https://github.com/mhnuk2007/leetcodepractice)
+**LeetCode:** [@mhnuk2007](https://leetcode.com/u/mhnuk2007/)
+**Java DSA:** [leetcodepractice](https://github.com/mhnuk2007/leetcodepractice)
 
 ### 🐍 Python DSA
 
-* Big-O analysis
-* Recursion
-* Algorithm optimization
-* Memoization
-* Dynamic programming
-
-Repository: [Python DSA Practice](https://github.com/mhnuk2007/python-dsa)
+- Big-O analysis
+- Recursion
+- Algorithm optimization
+- Memoization
+- Dynamic programming
 
 ### 💠 C# / .NET
 
 Exploring C# and .NET fundamentals through hands-on console applications covering:
 
-* C# fundamentals
-* OOP
-* Collections
-* Exception handling
-* Parsing and type conversion
-
-Repository: [C#/.NET Practice](https://github.com/mhnuk2007/learning-dotnet)
+- C# fundamentals
+- OOP
+- Collections
+- Exception handling
+- Parsing and type conversion
 
 ---
 
-## 👨‍💻 Technical Skills
+# 👨‍💻 Technical Skills
 
 ### Backend Engineering
 
 **Java • Spring Boot • Spring Framework • Spring Security • Spring AI • Microservices • REST APIs**
 
-* RESTful API design
-* Microservices architecture
-* Authentication and authorization
-* OAuth2 and JWT
-* Database integration
-* Testing and regression coverage
-* AI-powered backend applications
+- RESTful API design
+- Microservices architecture
+- Authentication and authorization
+- OAuth2 and JWT
+- Database integration
+- Testing and regression coverage
+- AI-powered backend applications
 
 ### Jakarta & Enterprise Java
 
-**Jakarta EE • Jakarta Persistence • Jakarta NoSQL • Eclipse JNoSQL • ServiceLoader**
+**Jakarta EE • Jakarta Data • Jakarta Persistence • Jakarta NoSQL • Eclipse JNoSQL • ServiceLoader**
 
-* Enterprise Java APIs
-* Persistence
-* Repository abstractions
-* Transaction management
-* Service provider discovery
-* Class-loader behavior
-* Asynchronous repository APIs
-* `CompletionStage`-based repository methods
+- Enterprise Java APIs
+- Persistence
+- TCK development
+- Repository abstractions
+- Transaction management
+- Service provider discovery
+- Class-loader behavior
+- Asynchronous repository APIs
+- `CompletionStage`-based repository methods
 
 ### Frontend Development
 
 **Angular • React • Next.js • TypeScript • JavaScript**
 
-* Component architecture
-* State management
-* Responsive interfaces
-* Type-safe development
-* Performance optimization
+- Component architecture
+- State management
+- Responsive interfaces
+- Type-safe development
+- Performance optimization
 
 ### Cloud & Infrastructure
 
 **AWS • Docker • Kubernetes • Terraform • CI/CD**
 
-* Containerization
-* Kubernetes orchestration
-* Infrastructure as Code
-* Cloud deployments
-* Automated testing and deployment
+- Containerization
+- Kubernetes orchestration
+- Infrastructure as Code
+- Cloud deployments
+- Automated testing and deployment
 
 ### Data & AI
 
 **PostgreSQL • MySQL • pgvector • Spring AI**
 
-* Relational database design
-* Query optimization
-* Vector search
-* Embeddings
-* Semantic search
-* Retrieval-Augmented Generation patterns
+- Relational database design
+- Query optimization
+- Vector search
+- Embeddings
+- Semantic search
+- Retrieval-Augmented Generation patterns
 
 ---
 
-## 🛠️ Technology Stack
+# 🛠️ Technology Stack
 
-**Backend**
+### Backend
 
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square\&logo=openjdk\&logoColor=white)
-![Spring](https://img.shields.io/badge/Spring-6DB33F?style=flat-square\&logo=spring\&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square\&logo=spring-boot\&logoColor=white)
-![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=flat-square\&logo=spring-security\&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![Spring](https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=spring&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=spring-boot&logoColor=white)
+![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=flat-square&logo=spring-security&logoColor=white)
 ![Microservices](https://img.shields.io/badge/Microservices-FF6B6B?style=flat-square)
 
-**Jakarta & Enterprise Java**
+### Jakarta & Enterprise Java
 
-![Jakarta EE](https://img.shields.io/badge/Jakarta_EE-007396?style=flat-square\&logo=eclipse\&logoColor=white)
-![Jakarta NoSQL](https://img.shields.io/badge/Jakarta_NoSQL-007396?style=flat-square\&logo=eclipse\&logoColor=white)
-![Eclipse JNoSQL](https://img.shields.io/badge/Eclipse_JNoSQL-2C2255?style=flat-square\&logo=eclipse\&logoColor=white)
+![Jakarta EE](https://img.shields.io/badge/Jakarta_EE-007396?style=flat-square&logo=eclipse&logoColor=white)
+![Jakarta Data](https://img.shields.io/badge/Jakarta_Data-007396?style=flat-square&logo=eclipse&logoColor=white)
+![Jakarta NoSQL](https://img.shields.io/badge/Jakarta_NoSQL-007396?style=flat-square&logo=eclipse&logoColor=white)
+![Eclipse JNoSQL](https://img.shields.io/badge/Eclipse_JNoSQL-2C2255?style=flat-square&logo=eclipse&logoColor=white)
 
-**Frontend**
+### Frontend
 
-![Angular](https://img.shields.io/badge/Angular-DD0031?style=flat-square\&logo=angular\&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=flat-square\&logo=react\&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000?style=flat-square\&logo=next.js\&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square\&logo=typescript\&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square\&logo=javascript\&logoColor=black)
+![Angular](https://img.shields.io/badge/Angular-DD0031?style=flat-square&logo=angular&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 
-**Cloud & DevOps**
+### Cloud & DevOps
 
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square\&logo=amazon-aws\&logoColor=FF9900)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square\&logo=docker\&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square\&logo=kubernetes\&logoColor=white)
-![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square\&logo=terraform\&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=FF9900)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
 
-**Data & AI**
+### Data & AI
 
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square\&logo=postgresql\&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square\&logo=mysql\&logoColor=white)
-![pgvector](https://img.shields.io/badge/pgvector-316192?style=flat-square\&logo=postgresql\&logoColor=white)
-![Spring AI](https://img.shields.io/badge/Spring_AI-6DB33F?style=flat-square\&logo=spring\&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![pgvector](https://img.shields.io/badge/pgvector-316192?style=flat-square&logo=postgresql&logoColor=white)
+![Spring AI](https://img.shields.io/badge/Spring_AI-6DB33F?style=flat-square&logo=spring&logoColor=white)
 
 ---
 
-## 📊 GitHub Analytics
+# 📊 GitHub Analytics
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=mhnuk2007\&show_icons=true\&theme=react\&bg_color=0D1117\&title_color=6366F1)
+<img src="https://github-readme-stats.vercel.app/api?username=mhnuk2007&show_icons=true&theme=react&bg_color=0D1117&title_color=6366F1&hide_border=true" alt="GitHub Stats" />
 
-![Streak Stats](https://github-readme-streak-stats.herokuapp.com/?user=mhnuk2007\&theme=react\&bg_color=0D1117\&title_color=6366F1)
+<img src="https://streak-stats.demolab.com/?user=mhnuk2007&theme=react&background=0D1117&ring=6366F1&fire=6366F1&currStreakLabel=6366F1&hide_border=true" alt="GitHub Streak Stats" />
 
 </div>
 
 ---
 
-## 🤝 Why Work With Me?
+# 🤝 Why Work With Me
 
-* ✅ **Problem Solver** — I investigate, reproduce, debug, and fix difficult problems.
-* ✅ **Java & Spring Boot Focused** — My primary backend ecosystem.
-* ✅ **Open Source Contributor** — Experience working with real production codebases.
-* ✅ **Jakarta Ecosystem Contributor** — Hands-on contribution to Jakarta EE, Jakarta NoSQL, and Jakarta Agentic AI projects.
-* ✅ **Full-Stack Versatility** — Comfortable across backend, frontend, databases, and infrastructure.
-* ✅ **Self-Directed Learner** — I continuously learn by building and contributing.
-* ✅ **Production Mindset** — Focused on testing, maintainability, reliability, and scalability.
-* ✅ **Continuous Improvement** — Every issue and code review is an opportunity to become a better engineer.
+- ✅ **Problem Solver** — I investigate, reproduce, debug, and fix difficult problems.
+- ☕ **Java & Spring Boot Focused** — My primary backend ecosystem.
+- 🌐 **Open Source Contributor** — Experience working with real Java ecosystem codebases.
+- 🧩 **Jakarta Ecosystem Contributor** — Hands-on contribution to Jakarta Data, Jakarta EE, Jakarta NoSQL, and Jakarta Agentic AI.
+- 🧪 **Testing Mindset** — Experience with regression tests, TCK scenarios, compatibility testing, and CI validation.
+- 🏗️ **Production Mindset** — Focused on testing, maintainability, reliability, and scalability.
+- 📚 **Self-Directed Learner** — I continuously learn by building, investigating, and contributing.
+- 🚀 **Continuous Improvement** — Every issue and code review is an opportunity to become a better engineer.
 
 ---
 
 <div align="center">
 
-## 📬 Connect With Me
+# 📬 Connect With Me
 
 **Mohan Lal · `mhnuk2007`**
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit_My_Work-6366F1?style=for-the-badge\&logo=google-chrome\&logoColor=white)](https://mhnuk2007.github.io/)
-[![GitHub](https://img.shields.io/badge/GitHub-mhnuk2007-181717?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/mhnuk2007)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Let's_Connect-0A66C2?style=for-the-badge\&logo=linkedin\&logoColor=white)](https://linkedin.com/in/mhnuk2007/)
-[![LeetCode](https://img.shields.io/badge/LeetCode-Profile-FFA116?style=for-the-badge\&logo=leetcode\&logoColor=white)](https://leetcode.com/u/mhnuk2007/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit_My_Work-6366F1?style=for-the-badge&logo=google-chrome&logoColor=white)](https://mhnuk2007.github.io/)
+[![GitHub](https://img.shields.io/badge/GitHub-mhnuk2007-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mhnuk2007)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Let's_Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/mhnuk2007/)
+[![LeetCode](https://img.shields.io/badge/LeetCode-Profile-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/mhnuk2007/)
 
 </div>
 
@@ -550,7 +630,7 @@ I don't believe a developer's growth is defined by a degree or a job title. It i
 
 <br>
 
-<sub>💙 Crafted with code and coffee • Last updated: August 2026</sub>
+<sub>💙 Crafted with code and coffee • Last updated: September 2026</sub>
 
 </div>
 
