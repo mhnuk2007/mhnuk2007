@@ -12,7 +12,7 @@
 
 <!-- SOCIAL BADGES -->
 
-[![Portfolio](https://img.shields.io/badge/🌐_Live_Portfolio-6366F1?style=for-the-badge&logoColor=white)](https://mhnuk2007.github.io/)
+[![Portfolio](https://img.shields.io/badge/🌐_Live_Portfolio-6366F1?style=for-the-badge&logoColor=white)](https://mhnuk2007.tech/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/mhnuk2007/)
 [![LeetCode](https://img.shields.io/badge/LeetCode-Profile-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/mhnuk2007/)
 [![GitHub](https://img.shields.io/badge/GitHub-mhnuk2007-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mhnuk2007)
@@ -60,18 +60,20 @@ I contribute to open-source projects in the Java ecosystem, including **Eclipse 
 
 # 🚀 Featured Flagship Project
 
-## 🏛️ [College Teachers Seniority & Retirement Portal](https://github.com/mhnuk2007/seniorityportal)
+## 🏛️ [College Teachers Seniority & Retirement Portal](https://seniorityportal.mhnuk2007.tech/)
 
 > **Civic technology platform for the College Education Department, Government of Sindh**  
 > An authoritative, read-only analytical compendium managing seniority rosters, statutory retirement timelines, and institutional capacity for the entire collegiate cadre.
 
-[![Repository](https://img.shields.io/badge/GitHub-seniorityportal-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/mhnuk2007/seniorityportal)
+[![Live Portal](https://img.shields.io/badge/🌐_Live_Portal-seniorityportal.mhnuk2007.tech-0284C7?style=flat-square&logo=google-chrome&logoColor=white)](https://seniorityportal.mhnuk2007.tech/)
+[![Vercel Mirror](https://img.shields.io/badge/Vercel_Mirror-seniorityportal.vercel.app-000000?style=flat-square&logo=vercel&logoColor=white)](https://seniorityportal.vercel.app/)
 ![Next.js 16](https://img.shields.io/badge/Next.js_16-000000?style=flat-square&logo=next.js&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![React](https://img.shields.io/badge/React_19-20232A?style=flat-square&logo=react&logoColor=61DAFB)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
 ![Turbopack](https://img.shields.io/badge/Turbopack-000000?style=flat-square&logo=vercel&logoColor=white)
 ![Vitest](https://img.shields.io/badge/Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white)
+![Private Repository](https://img.shields.io/badge/Source-Private_Official_Repository-yellow?style=flat-square&logo=github&logoColor=white)
 
 ### 🌟 Key Highlights & System Scope:
 
@@ -82,7 +84,7 @@ I contribute to open-source projects in the Java ecosystem, including **Eclipse 
 - **Statutory Decision Support Calculators**: Implements the Sindh Civil Service Pension Calculator (qualifying service rounding, commutation factor matrices) and BPS Pay Fixation Calculator (Rule 10(3) refixation).
 - **Engineering & Code Quality**: Fully type-checked with TypeScript (`tsc --noEmit`), React Compiler hygiene, 298 passing unit/integration tests with Vitest, and WCAG AA accessible light/dark theme architecture.
 
-🔗 [Explore Project Repository](https://github.com/mhnuk2007/seniorityportal)
+🔗 **Production Deployments:** [seniorityportal.mhnuk2007.tech](https://seniorityportal.mhnuk2007.tech/) &bull; [seniorityportal.vercel.app](https://seniorityportal.vercel.app/)
 
 ---
 
@@ -633,7 +635,7 @@ Exploring C# and .NET fundamentals through hands-on console applications coverin
 
 **Mohan Lal · `mhnuk2007`**
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit_My_Work-6366F1?style=for-the-badge&logo=google-chrome&logoColor=white)](https://mhnuk2007.github.io/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit_My_Work-6366F1?style=for-the-badge&logo=google-chrome&logoColor=white)](https://mhnuk2007.tech/)
 [![GitHub](https://img.shields.io/badge/GitHub-mhnuk2007-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mhnuk2007)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Let's_Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/mhnuk2007/)
 [![LeetCode](https://img.shields.io/badge/LeetCode-Profile-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/mhnuk2007/)
