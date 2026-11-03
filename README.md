@@ -472,7 +472,7 @@ Exploring C# and .NET fundamentals through hands-on console applications coverin
 
 ---
 
-# 👨‍💻 Technical Skills
+# 👨💻 Technical Skills
 
 ### Backend Engineering
 
