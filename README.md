@@ -6,7 +6,7 @@
 
 <!-- TYPING ANIMATION -->
 
-<img src="https://readme-typing-svg.herokuapp.com/?font=Fira+Code&weight=600&size=28&pause=1000&color=6366F1&center=true&vCenter=true&width=800&lines=Java+%26+Spring+Boot+Engineer;Java+Full+Stack+Developer;Open+Source+Contributor+%7C+Eclipse+JNoSQL;Jakarta+EE+%7C+Jakarta+Data+%7C+Jakarta+NoSQL;Microservices+%7C+Docker+%7C+Kubernetes;Cloud-Native+Development+%7C+AWS;Building+AI-Powered+Applications" alt="Mohan Lal - Java and Spring Boot Engineer" />
+<img src="https://readme-typing-svg.herokuapp.com/?font=Fira+Code&weight=600&size=28&pause=1000&color=6366F1&center=true&vCenter=true&width=800&lines=Java+%26+Spring+Boot+Engineer;Creator+%7C+College+Teachers+Seniority+Portal;Java+Full+Stack+Developer;Open+Source+Contributor+%7C+Eclipse+JNoSQL;Jakarta+EE+%7C+Jakarta+Data+%7C+Jakarta+NoSQL;Microservices+%7C+Docker+%7C+Kubernetes;Cloud-Native+Development+%7C+AWS;Building+AI-Powered+Applications" alt="Mohan Lal - Java and Spring Boot Engineer" />
 
 <br><br>
 
@@ -55,6 +55,34 @@ I contribute to open-source projects in the Java ecosystem, including **Eclipse 
 
 > **GitHub:** [`mhnuk2007`](https://github.com/mhnuk2007)
 > **Primary focus:** Java • Spring Boot • Microservices • Jakarta EE • Cloud • Open Source
+
+---
+
+# 🚀 Featured Flagship Project
+
+## 🏛️ [College Teachers Seniority & Retirement Portal](https://github.com/mhnuk2007/seniorityportal)
+
+> **Civic technology platform for the College Education Department, Government of Sindh**  
+> An authoritative, read-only analytical compendium managing seniority rosters, statutory retirement timelines, and institutional capacity for the entire collegiate cadre.
+
+[![Repository](https://img.shields.io/badge/GitHub-seniorityportal-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/mhnuk2007/seniorityportal)
+![Next.js 16](https://img.shields.io/badge/Next.js_16-000000?style=flat-square&logo=next.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React_19-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
+![Turbopack](https://img.shields.io/badge/Turbopack-000000?style=flat-square&logo=vercel&logoColor=white)
+![Vitest](https://img.shields.io/badge/Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white)
+
+### 🌟 Key Highlights & System Scope:
+
+- **24 Cadre Categories & 8,978 Validated Records**: Unified platform encompassing all 4 teaching tiers (Professor, Associate Professor, Assistant Professor, Lecturer — Male & Female) plus Collegiate Librarians and Directors Physical Education (DPE).
+- **Zero-Mutation Architectural Pipeline**: Strict read-only ingestion from official departmental master records into validated, category-scoped immutable datasets without data fabrication or guessing.
+- **Retirement Analysis & Multi-Year Calendar**: Real-time deterministic retirement projection (`DOB + 60 years - 1 day`), multi-year interactive calendar (2024–2045+), upcoming cohort timelines, and senior/junior relationship mapping.
+- **Institutional Directory & SNE Sanctioned Posts**: Tracks **390+ public degree colleges** and **6 regional directorates**, providing detailed sanctioned posts vs. working strength audits, staffing capacity percentages, and structural vacancy tracking.
+- **Statutory Decision Support Calculators**: Implements the Sindh Civil Service Pension Calculator (qualifying service rounding, commutation factor matrices) and BPS Pay Fixation Calculator (Rule 10(3) refixation).
+- **Engineering & Code Quality**: Fully type-checked with TypeScript (`tsc --noEmit`), React Compiler hygiene, 298 passing unit/integration tests with Vitest, and WCAG AA accessible light/dark theme architecture.
+
+🔗 [Explore Project Repository](https://github.com/mhnuk2007/seniorityportal)
 
 ---
 
@@ -630,7 +658,7 @@ I don't believe a developer's growth is defined by a degree or a job title. It i
 
 <br>
 
-<sub>💙 Crafted with code and coffee • Last updated: September 2026</sub>
+<sub>💙 Crafted with code and coffee • Last updated: November 2026</sub>
 
 </div>
 
