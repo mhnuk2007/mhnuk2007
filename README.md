@@ -67,17 +67,21 @@ I actively build and contribute to open-source software in the Java and distribu
 ![Spring Boot 3](https://img.shields.io/badge/Spring_Boot-3.4-6DB33F?style=flat-square&logo=spring-boot&logoColor=white)
 ![Spring Modulith](https://img.shields.io/badge/Spring_Modulith-6DB33F?style=flat-square)
 ![PostgreSQL 17](https://img.shields.io/badge/PostgreSQL-17-316192?style=flat-square&logo=postgresql&logoColor=white)
-![Flyway](https://img.shields.io/badge/Flyway-CC0202?style=flat-square&logo=flyway&logoColor=white)
+![Swagger UI](https://img.shields.io/badge/Swagger_UI-OpenAPI_3.1-85EA2D?style=flat-square&logo=swagger&logoColor=black)
+![Next.js 16](https://img.shields.io/badge/Next.js-16_(Web)-000000?style=flat-square&logo=next.js&logoColor=white)
 ![Testcontainers](https://img.shields.io/badge/Testcontainers-171717?style=flat-square&logo=docker&logoColor=white)
 ![ArchUnit](https://img.shields.io/badge/ArchUnit-Rules_Enforced-brightgreen?style=flat-square)
 ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg?style=flat-square)
 
 ### 🏆 Key Highlights & Architectural Scope:
 
-- **Language-Agnostic Participant Contract (`finsim/v1`)**: External institutions (Java, Python, Node.js, Go) communicate over a versioned HTTP/JSON specification defined in OpenAPI 3.1.
-- **`UNKNOWN` State & ADR 0001 Reconciliation**: Unlike naive sandboxes that convert network timeouts into "failed", FinSim models `UNKNOWN` as a first-class state. Retries are guarded (`409 RECONCILIATION_REQUIRED`), and an automated forward-first decision engine reconciles or reverses debit legs safely without money creation or loss.
+- **Language-Agnostic Participant Contract (`finsim/v1`)**: External institutions (Java, Python, Node.js, Go) communicate over a versioned HTTP/JSON specification defined in OpenAPI 3.1 with interactive Swagger UI (`/swagger-ui.html`).
+- **`UNKNOWN` State & ADR 0001 Forward Reconciliation**: Unlike naive sandboxes that convert network timeouts into "failed", FinSim models `UNKNOWN` as a first-class state. Retries are guarded (`409 RECONCILIATION_REQUIRED`), and an automated forward-first decision engine reconciles or reverses debit legs safely with guaranteed zero duplicate credits.
 - **Strict Idempotency Enforcement**: Every mutating request requires an `Idempotency-Key` (8–128 chars); identical bodies return cached executions, conflicting bodies return `409 IDEMPOTENCY_CONFLICT`.
-- **Fault Injection Rule Engine**: Injects synthetic latency (`DELAY`), transport cutoffs (`TIMEOUT`), and duplicated packets (`DUPLICATE_DELIVERY`) using deterministic seeded pseudo-randomness for reproducible chaos scenarios.
+- **Fault Injection & Deterministic Replay Engine**: Injects synthetic latency (`DELAY`), transport cutoffs (`TIMEOUT`), and duplicated packets (`DUPLICATE_DELIVERY`). Uses domain-separated SHA-256 IDs, seeded PRNGs, and canonical trace normalization for byte-level deterministic scenario replays.
+- **Deterministic Virtual Clock ("Two Clocks Rule")**: Bifurcates temporal mechanics: physical wall-clock for security checks (TLS/JWS nonce TTL) and discrete-event virtual clock for business deadlines, cut-offs, and authorization hold expirations with instantaneous time-travel.
+- **Double-Entry Ledger & Conservation Invariants**: Append-only relational journal postings as the single source of truth; database-level immutability rules; mathematical multi-currency zero-sum invariant: $\sum \text{Debits} \equiv \sum \text{Credits}$.
+- **Next.js 16 Web Workspace & Simulation Cockpit**: Decoupled web experience featuring an educational human-first landing page ("The flight simulator for digital money") and an observability cockpit with network topologies and trace waterfalls.
 - **Strict Architecture Boundaries**: Built with Spring Modulith and ArchUnit to enforce strict cross-module isolation, deterministic clocks, and immutable audit logs (`transfer_stages`).
 
 🔗 **Repository:** [github.com/mhnuk2007/finsim](https://github.com/mhnuk2007/finsim)
