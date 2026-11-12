@@ -39,7 +39,7 @@ I actively build and contribute to open-source software in the Java and distribu
 
 ### 🎯 Core Focus
 
-- **Java 21 & Spring Boot 3**
+- **Java 21 & Spring Boot 4**
 - **Distributed Financial Networks & Payment Orchestration**
 - **Finite State Machines & Idempotent Architectures**
 - **Spring Modulith & Modular Monoliths**
@@ -64,7 +64,7 @@ I actively build and contribute to open-source software in the Java and distribu
 
 [![GitHub Repo](https://img.shields.io/badge/GitHub-mhnuk2007%2Ffinsim-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/mhnuk2007/finsim)
 ![Java 21](https://img.shields.io/badge/Java-21-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![Spring Boot 3](https://img.shields.io/badge/Spring_Boot-3.4-6DB33F?style=flat-square&logo=spring-boot&logoColor=white)
+![Spring Boot 4](https://img.shields.io/badge/Spring_Boot-4.1-6DB33F?style=flat-square&logo=spring-boot&logoColor=white)
 ![Spring Modulith](https://img.shields.io/badge/Spring_Modulith-6DB33F?style=flat-square)
 ![PostgreSQL 17](https://img.shields.io/badge/PostgreSQL-17-316192?style=flat-square&logo=postgresql&logoColor=white)
 ![Swagger UI](https://img.shields.io/badge/Swagger_UI-OpenAPI_3.1-85EA2D?style=flat-square&logo=swagger&logoColor=black)
