@@ -6,7 +6,7 @@
 
 <!-- TYPING ANIMATION -->
 
-<img src="https://readme-typing-svg.herokuapp.com/?font=Fira+Code&weight=600&size=26&pause=1000&color=6366F1&center=true&vCenter=true&width=850&lines=Java+%26+Spring+Boot+Engineer;Creator+%7C+FinSim+Financial+Network+Simulator;Creator+%7C+College+Teachers+Seniority+Portal;Open+Source+Contributor+%7C+Eclipse+JNoSQL+%26+Jakarta+Data;Distributed+Systems+%7C+Spring+Modulith+%7C+PostgreSQL;Cloud-Native+%7C+Docker+%7C+Kubernetes+%7C+AWS;Building+High-Assurance+Backend+Systems" alt="Mohan Lal - Java and Spring Boot Engineer" />
+<img src="https://readme-typing-svg.herokuapp.com/?font=Fira+Code&weight=600&size=26&pause=1000&color=6366F1&center=true&vCenter=true&width=850&lines=Java+%26+Spring+Boot+Engineer;Creator+%7C+FinSim+Financial+Network+Simulator;Creator+%7C+Jakarta+Data+TCK+EE+Runner;Open+Source+Contributor+%7C+Open+Liberty+%26+GlassFish;Jakarta+Data+TCK+%26+Specification+Contributor;Eclipse+JNoSQL+%26+Jakarta+EE+Ecosystem;Distributed+Systems+%7C+Spring+Modulith+%7C+PostgreSQL;Building+High-Assurance+Backend+Systems" alt="Mohan Lal - Java and Spring Boot Engineer" />
 
 <br><br>
 
@@ -31,20 +31,22 @@
 
 # 👋 Hi, I'm Mohan Lal
 
-I'm a **Java and Spring Boot Backend Engineer and Open Source Contributor** focused on distributed systems, financial networks, high-assurance architecture, enterprise Java, and cloud-native backend engineering.
+I'm a **Java and Spring Boot Backend Engineer and Open Source Contributor** focused on distributed systems, financial networks, high-assurance architecture, enterprise Java runtimes, and cloud-native backend engineering.
 
-My core backend stack is **Java 21 and Spring Boot**, with practical experience in distributed payment orchestration, idempotent workflows, finite state machines, Spring Modulith, relational databases (PostgreSQL), Docker, Kubernetes, AWS, and enterprise standards.
+My core backend stack is **Java 21 and Spring Boot**, with practical experience in distributed payment orchestration, idempotent workflows, finite state machines, Spring Modulith, relational databases (PostgreSQL), enterprise application runtimes (**Open Liberty**, **GlassFish**, **WildFly**), Docker, Kubernetes, AWS, and enterprise standards.
 
-I actively build and contribute to open-source software in the Java and distributed systems ecosystem, including **FinSim** (creator & maintainer), **Eclipse JNoSQL**, **Jakarta EE / Jakarta Data**, **Jakarta Agentic AI**, and **Spring-related projects** — debugging complex concurrency/TCCL issues, writing regression and TCK test suites, and designing clean architecture boundaries.
+I actively build and contribute to open-source software across the Java and distributed systems landscape, including **FinSim** (creator & maintainer), **Jakarta Data TCK EE Runner** (creator & maintainer), **Open Liberty**, **Eclipse GlassFish**, **Jakarta EE / Jakarta Data**, **Eclipse JNoSQL**, and **Spring-related projects** — diagnosing complex OSGi/class-loader and TCCL failures, authoring specification tests and TCK suites, building multi-provider container testbeds, and designing clean architecture boundaries.
 
 ### 🎯 Core Focus
 
 - **Java 21 & Spring Boot 4**
 - **Distributed Financial Networks & Payment Orchestration**
 - **Finite State Machines & Idempotent Architectures**
+- **Enterprise Java Runtimes: Open Liberty, Eclipse GlassFish 8, WildFly**
+- **Jakarta Data 1.1 Specification & TCK Suite Development**
+- **Arquillian Managed Container Testbeds & Multi-Module Reactors**
 - **Spring Modulith & Modular Monoliths**
-- **Jakarta EE, Jakarta Data & Jakarta NoSQL**
-- **Eclipse JNoSQL Ecosystem**
+- **Eclipse JNoSQL & Jakarta NoSQL Ecosystem**
 - **PostgreSQL 17, Flyway & Testcontainers**
 - **Docker, Docker Compose & Kubernetes**
 - **AWS & Infrastructure as Code (Terraform)**
@@ -80,11 +82,35 @@ I actively build and contribute to open-source software in the Java and distribu
 - **Strict Idempotency Enforcement**: Every mutating request requires an `Idempotency-Key` (8–128 chars); identical bodies return cached executions, conflicting bodies return `409 IDEMPOTENCY_CONFLICT`.
 - **Fault Injection & Deterministic Replay Engine**: Injects synthetic latency (`DELAY`), transport cutoffs (`TIMEOUT`), and duplicated packets (`DUPLICATE_DELIVERY`). Uses domain-separated SHA-256 IDs, seeded PRNGs, and canonical trace normalization for byte-level deterministic scenario replays.
 - **Deterministic Virtual Clock ("Two Clocks Rule")**: Bifurcates temporal mechanics: physical wall-clock for security checks (TLS/JWS nonce TTL) and discrete-event virtual clock for business deadlines, cut-offs, and authorization hold expirations with instantaneous time-travel.
-- **Double-Entry Ledger & Conservation Invariants**: Append-only relational journal postings as the single source of truth; database-level immutability rules; mathematical multi-currency zero-sum invariant: $\sum \text{Debits} \equiv \sum \text{Credits}$.
+- **Double-Entry Ledger & Conservation Invariants**: Append-only relational journal postings as the single source of truth; database-level immutability rules; mathematical multi-currency zero-sum invariant: $\sum 	ext{Debits} \equiv \sum 	ext{Credits}$.
 - **Next.js 16 Web Workspace & Simulation Cockpit**: Decoupled web experience featuring an educational human-first landing page ("The flight simulator for digital money") and an observability cockpit with network topologies and trace waterfalls.
 - **Strict Architecture Boundaries**: Built with Spring Modulith and ArchUnit to enforce strict cross-module isolation, deterministic clocks, and immutable audit logs (`transfer_stages`).
 
 🔗 **Repository:** [github.com/mhnuk2007/finsim](https://github.com/mhnuk2007/finsim)
+
+---
+
+## ☕ [Jakarta Data TCK EE Runner](https://github.com/mhnuk2007/jakarta-data-tck-ee-runner)
+
+> **Standalone multi-provider Arquillian testbed and Maven reactor** running official Jakarta Data 1.1 TCK suites against **Open Liberty**, **Eclipse GlassFish 8**, and **WildFly**.
+
+[![GitHub Repo](https://img.shields.io/badge/GitHub-mhnuk2007%2Fjakarta--data--tck--ee--runner-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/mhnuk2007/jakarta-data-tck-ee-runner)
+![Java 21](https://img.shields.io/badge/Java-21-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![Jakarta Data 1.1](https://img.shields.io/badge/Jakarta_Data-1.1-007396?style=flat-square&logo=eclipse&logoColor=white)
+![Open Liberty](https://img.shields.io/badge/Open_Liberty-Supported-006699?style=flat-square&logo=ibm&logoColor=white)
+![GlassFish 8](https://img.shields.io/badge/GlassFish-8-E25B1D?style=flat-square&logo=eclipse&logoColor=white)
+![WildFly](https://img.shields.io/badge/WildFly-Supported-CC0000?style=flat-square&logo=redhat&logoColor=white)
+![Arquillian](https://img.shields.io/badge/Arquillian-Managed-4C9A2A?style=flat-square)
+![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg?style=flat-square)
+
+### 🏆 Key Highlights & Architectural Scope:
+
+- **Multi-Runtime Container Adapters**: Modular Maven reactor orchestrating Open Liberty (`liberty-maven-plugin` + managed container), GlassFish 8 (OmniFish managed adapter `ee.omnifish.arquillian`), and WildFly (`wildfly-arquillian-container-managed:5.1.0.Final`).
+- **Automated Resource Provisioning**: Provisions embedded Derby connection pools and DataSources automatically across containers (`jdbc/DataTCK`, `DefaultDataSource`) without manual server pre-configuration.
+- **Dual TCK Execution Profiles**: Validated against both standalone asynchronous tests (`AsyncTests`) and full transactional persistence suites (`CompanyRepositoryTest`, `OrderRepositoryTest`, `InventoryRepositoryTest`).
+- **Surefire Dynamic Discovery**: Leverages maven-surefire `<dependenciesToScan>` with protocol adaptors (`tck_protocol=Servlet 5.0`) to run tests directly from official `jakarta.data-tck` artifacts without code duplication.
+
+🔗 **Repository:** [github.com/mhnuk2007/jakarta-data-tck-ee-runner](https://github.com/mhnuk2007/jakarta-data-tck-ee-runner)
 
 ---
 
@@ -118,9 +144,66 @@ I actively build and contribute to open-source software in the Java and distribu
 
 # 📦 Open Source Contributions
 
-## ☕ Jakarta Data
+## 🗽 Open Liberty
 
-Contributing to **Jakarta Data** through TCK development, asynchronous behavior testing, transaction semantics, and compatibility-oriented test coverage.
+Contributing to **Open Liberty** by diagnosing core runtime class-loading/OSGi boundaries, URL handler null-safety, and enterprise persistence runtime integrations.
+
+### 🐛 Fixed `InMemoryUrlStreamHandler` NullPointerException During Persistence-Unit Initialization
+
+**Open Liberty — Issue #35697 / PR #36370 • Open**
+
+Investigated and resolved a runtime `NullPointerException` thrown in `InMemoryUrlStreamHandler` during persistence-unit bootstrap when initializing Jakarta Data 1.1 repositories backed by Jakarta Persistence 3.2 / 4.0.
+
+**What I contributed:**
+
+- Isolated the failure occurring during Hibernate / JPA entity scanning over OSGi in-memory archive URLs.
+- Diagnosed null return paths when resolving custom in-memory stream protocols within `dev/com.ibm.ws.org.apache.felix.framework`.
+- Hardened `InMemoryUrlStreamHandler` to safely handle null query/path components and properly delegate stream resolution.
+- Validated the fix with full Jakarta Data persistence test suites on Open Liberty.
+
+🔗 [Issue #35697](https://github.com/OpenLiberty/open-liberty/issues/35697) • [PR #36370](https://github.com/OpenLiberty/open-liberty/pull/36370)
+
+---
+
+## 🐟 Eclipse GlassFish
+
+Contributing to **Eclipse GlassFish** (the reference implementation for Jakarta EE) through integration test coverage, NoSQL repository verification, and Surefire test runner discovery.
+
+### 🧪 Added MongoDB Jakarta Data Repository Smoke Test
+
+**GlassFish — PR #26218 • Merged**
+
+Added end-to-end integration smoke testing for Jakarta Data repositories backed by MongoDB (`NoSQLDataRepositoryTest`) within the GlassFish test harness.
+
+**What I contributed:**
+
+- Implemented `NoSQLDataRepositoryTest` exercising entity persistence, querying, and retrieval on GlassFish.
+- Verified CDI injection and container-managed persistence boundaries for NoSQL providers.
+- Contributed full integration test lifecycle and validated in upstream CI.
+
+🔗 [Merged PR #26218](https://github.com/eclipse-ee4j/glassfish/pull/26218)
+
+---
+
+### ⚙️ Fixed Surefire Test Runner Discovery for NoSQL TCK Classes
+
+**GlassFish — PR #26284 • Merged**
+
+Resolved Maven Surefire test class discovery failures preventing NoSQL TCK test suites from executing during automated container builds.
+
+**What I contributed:**
+
+- Diagnosed test pattern mismatch and dependency scanning rules in the build reactor.
+- Updated Surefire configuration to reliably locate and execute NoSQL TCK test classes.
+- Validated build and test execution across Java 17 and Java 21 pipelines.
+
+🔗 [Merged PR #26284](https://github.com/eclipse-ee4j/glassfish/pull/26284)
+
+---
+
+## ☕ Jakarta Data (TCK & Specification)
+
+Contributing to **Jakarta Data** through TCK development, specification formulation, asynchronous behavior testing, transaction semantics, and compatibility-oriented test coverage.
 
 ### 🧪 Added TCK Coverage for Exceptional Async Completion
 
@@ -173,18 +256,17 @@ The test verifies that a pending entity modification becomes visible to the repo
 
 ---
 
-### 🧪 Added `QueryOptions` TCK Coverage for Find, Query, Delete & NativeQuery
+### 🧪 Added `QueryOptions` TCK Coverage for Find, Query & NativeQuery
 
-**Jakarta Data — PR #1567 • Open**
+**Jakarta Data — PR #1567 • Merged**
 
-Added the remaining `@QueryOptions` scenarios from Jakarta Data issue #965:
+Added comprehensive `@QueryOptions` scenarios from Jakarta Data issue #965 across key repository query types:
 
 - `@Find`
 - `@Query`
-- `@Delete`
 - `@NativeQuery`
 
-Each test verifies that a pending entity modification becomes visible to the repository operation when using:
+Each test verifies that pending entity modifications become immediately visible to the repository operation when using:
 
 ```java
 @QueryOptions(flush = QueryFlushMode.FLUSH)
@@ -194,16 +276,44 @@ Each test verifies that a pending entity modification becomes visible to the rep
 
 - Added `@Find` + `QueryOptions` coverage.
 - Added `@Query` + `QueryOptions` coverage.
-- Added `@Delete` + `QueryOptions` coverage.
 - Added `@NativeQuery` + `QueryOptions` coverage.
 - Designed the scenarios around active transaction semantics.
 - Kept the tests portable and independent of a particular `EntityManager`.
-- Validated compilation and formatting.
-- All PR checks are currently passing.
+- Successfully validated, reviewed, and merged into the official Jakarta Data TCK suite.
 
-**Status:** Open — awaiting review.
+🔗 [Issue #965](https://github.com/jakartaee/data/issues/965) • [Merged PR #1567](https://github.com/jakartaee/data/pull/1567)
 
-🔗 [Issue #965](https://github.com/jakartaee/data/issues/965) • [PR #1567](https://github.com/jakartaee/data/pull/1567)
+---
+
+### 🗑️ Added `QueryOptions` Coverage on Stateful `@Delete` Repository
+
+**Jakarta Data — Issue #965 • PR In Progress**
+
+Extended the `@QueryOptions` test suite to cover `@Delete` operations on stateful repositories (`Inventory`), ensuring that pending entity modifications are properly flushed prior to delete execution within active transactions.
+
+**What I contributed:**
+
+- Designed stateful repository delete scenarios verifying flush semantics before delete execution.
+- Maintained clean separation from stateless repository tests.
+- Formatted with Spotless and signed off with ECA commit credentials.
+
+🔗 [Issue #965](https://github.com/jakartaee/data/issues/965)
+
+---
+
+### 📜 Specification Contribution: Section 6.4 Jakarta Persistence Integration
+
+**Jakarta Data — Issue #1618 • Proposed**
+
+Formulated the specification draft for Section 6.4 ("Jakarta Persistence Integration") in `jakarta-ee.adoc` detailing explicit repository flush semantics and transactional visibility requirements.
+
+**What I contributed:**
+
+- Drafted normative specification text defining transactional state transitions when `@QueryOptions(flush = FLUSH)` is used with Jakarta Persistence providers.
+- Formulated requirements for entity manager synchronization and persistence context interaction.
+- Contributed to upstream architectural discussion alongside specification leads.
+
+🔗 [Issue #1618](https://github.com/jakartaee/data/issues/1618)
 
 ---
 
@@ -416,6 +526,10 @@ BeanDefinitionSummaryTest:
 | Contribution | Project | Focus | Status |
 |---|---|---|---|
 | **FinSim** (Simulator) | **FinSim** | Financial network simulator, payment state machines, fault injection | **Creator & Lead** |
+| **Jakarta Data TCK Runner** | **jakarta-data-tck-ee-runner** | Multi-runtime TCK reactor (Open Liberty, GlassFish 8, WildFly) | **Creator & Lead** |
+| OSGi URL Stream Handler Fix | Open Liberty | Fix `InMemoryUrlStreamHandler` NPE during JPA unit bootstrap | [PR #36370](https://github.com/OpenLiberty/open-liberty/pull/36370) • Open |
+| MongoDB Smoke Test | GlassFish | MongoDB Jakarta Data repository integration smoke test | [PR #26218](https://github.com/eclipse-ee4j/glassfish/pull/26218) • **Merged** |
+| Surefire TCK Runner Discovery | GlassFish | Maven Surefire discovery for NoSQL TCK test classes | [PR #26284](https://github.com/eclipse-ee4j/glassfish/pull/26284) • **Merged** |
 | Transaction lifecycle fix | JNoSQL Extensions | `Page.totalElements()` outside transactions | [PR #209](https://github.com/eclipse-jnosql/jnosql-extensions/pull/209) • **Merged** |
 | Regression coverage | JNoSQL Extensions | Jakarta Persistence refactoring port | [PR #210](https://github.com/eclipse-jnosql/jnosql-extensions/pull/210) • **Merged** |
 | Class-loader fix | JNoSQL | `ServiceLoader` / TCCL discovery in Quarkus | [PR #765](https://github.com/eclipse-jnosql/jnosql/pull/765) • **Merged** |
@@ -424,7 +538,9 @@ BeanDefinitionSummaryTest:
 | Service discovery utility | JNoSQL | Reusable provider discovery infrastructure | [PR #769](https://github.com/eclipse-jnosql/jnosql/pull/769) • Open |
 | Jakarta Data TCK | Jakarta Data | Async exceptional completion | [PR #1556](https://github.com/jakartaee/data/pull/1556) • **Merged** |
 | Jakarta Data TCK | Jakarta Data | `QueryOptions` / `JakartaQuery` flush semantics | [PR #1561](https://github.com/jakartaee/data/pull/1561) • **Merged** |
-| Jakarta Data TCK | Jakarta Data | `Find` / `Query` / `Delete` / `NativeQuery` | [PR #1567](https://github.com/jakartaee/data/pull/1567) • Open |
+| Jakarta Data TCK | Jakarta Data | `QueryOptions` on `@Find`, `@Query`, `@NativeQuery` | [PR #1567](https://github.com/jakartaee/data/pull/1567) • **Merged** |
+| Jakarta Data TCK | Jakarta Data | `@Delete` with `@QueryOptions` flush coverage | [Issue #965](https://github.com/jakartaee/data/issues/965) • Open |
+| Jakarta Data Specification | Jakarta Data | Section 6.4 Jakarta Persistence integration text | [Issue #1618](https://github.com/jakartaee/data/issues/1618) • Proposed |
 | Domain modeling | Jakarta Agentic AI | JSR 354 `MonetaryAmount` in `BankTransaction` | [PR #59](https://github.com/jakartaee/agentic-ai/pull/59) • **Merged** |
 | Domain modeling | Spring Lens | Immutable `BeanDefinitionSummary` record | [PR #270](https://github.com/sdlc-pro/spring-lens/pull/270) • **Merged** |
 | License maintenance | JNoSQL | Project-wide EPL/Apache notices | [PR #770](https://github.com/eclipse-jnosql/jnosql/pull/770) • **Merged** |
@@ -435,7 +551,7 @@ BeanDefinitionSummaryTest:
 
 Open source has fundamentally changed the way I approach software engineering.
 
-It has pushed me beyond simply writing code that works. I have learned to investigate unfamiliar codebases, reproduce difficult distributed failures, trace framework lifecycles, understand class loaders and thread context switches, navigate Java platform internals, write portable regression and TCK test suites, collaborate across timezones with maintainers, and build robust public software.
+It has pushed me beyond simply writing code that works. I have learned to investigate unfamiliar codebases, reproduce difficult distributed failures, trace framework lifecycles, understand class loaders and thread context switches, navigate Java platform internals, write portable regression and TCK test suites, build multi-provider managed container testbeds, collaborate across timezones with maintainers, and build robust public software.
 
 The most valuable lesson has been simple:
 
@@ -449,7 +565,7 @@ Every issue investigated, reproducer built, failed hypothesis, regression test, 
 
 ### Backend & Distributed Systems Engineering
 
-**Java 21 • Spring Boot 3 • Spring Modulith • Spring Security • Distributed Networks • Microservices • REST APIs**
+**Java 21 • Spring Boot 3 & 4 • Spring Modulith • Spring Security • Distributed Networks • Microservices • REST APIs**
 
 - Distributed payment orchestration & finite state machines (with `UNKNOWN` recovery)
 - Idempotency guarantees & forward-first reconciliation
@@ -461,13 +577,14 @@ Every issue investigated, reproducer built, failed hypothesis, regression test, 
 
 ### Jakarta & Enterprise Java
 
-**Jakarta EE • Jakarta Data • Jakarta Persistence • Jakarta NoSQL • Eclipse JNoSQL • JSR 354 Money**
+**Jakarta EE • Open Liberty • GlassFish • WildFly • Jakarta Data • Jakarta Persistence • Jakarta NoSQL • Arquillian • Eclipse JNoSQL • JSR 354 Money**
 
-- Enterprise Java APIs & TCK development
+- Enterprise Java APIs, specification development & official TCK authoring
+- Arquillian managed container adapters and automated multi-server testbeds
 - High-integrity transaction management & flush mode semantics
 - Service provider discovery & modular class loading
 - Asynchronous repository abstractions (`CompletionStage`)
-- Portable persistence semantics across runtimes (Open Liberty, Quarkus)
+- Portable persistence semantics across runtimes (Open Liberty, GlassFish, WildFly, Quarkus)
 
 ### Frontend & Web Engineering
 
@@ -495,7 +612,7 @@ Every issue investigated, reproducer built, failed hypothesis, regression test, 
 ### Backend & Distributed Systems
 
 ![Java](https://img.shields.io/badge/Java-21-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-3-6DB33F?style=flat-square&logo=spring-boot&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-3_%26_4-6DB33F?style=flat-square&logo=spring-boot&logoColor=white)
 ![Spring Modulith](https://img.shields.io/badge/Spring_Modulith-6DB33F?style=flat-square)
 ![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=flat-square&logo=spring-security&logoColor=white)
 ![Microservices](https://img.shields.io/badge/Microservices-FF6B6B?style=flat-square)
@@ -504,6 +621,10 @@ Every issue investigated, reproducer built, failed hypothesis, regression test, 
 
 ![Jakarta EE](https://img.shields.io/badge/Jakarta_EE-007396?style=flat-square&logo=eclipse&logoColor=white)
 ![Jakarta Data](https://img.shields.io/badge/Jakarta_Data-007396?style=flat-square&logo=eclipse&logoColor=white)
+![Open Liberty](https://img.shields.io/badge/Open_Liberty-006699?style=flat-square&logo=ibm&logoColor=white)
+![GlassFish](https://img.shields.io/badge/GlassFish-E25B1D?style=flat-square&logo=eclipse&logoColor=white)
+![WildFly](https://img.shields.io/badge/WildFly-CC0000?style=flat-square&logo=redhat&logoColor=white)
+![Arquillian](https://img.shields.io/badge/Arquillian-4C9A2A?style=flat-square)
 ![Jakarta NoSQL](https://img.shields.io/badge/Jakarta_NoSQL-007396?style=flat-square&logo=eclipse&logoColor=white)
 ![Eclipse JNoSQL](https://img.shields.io/badge/Eclipse_JNoSQL-2C2255?style=flat-square&logo=eclipse&logoColor=white)
 
@@ -542,10 +663,10 @@ Every issue investigated, reproducer built, failed hypothesis, regression test, 
 # 🤝 Why Work With Me
 
 - 🧩 **Root-Cause Problem Solver** — I investigate, reproduce, isolate, and resolve deep architectural bugs.
-- ☕ **Java & Spring Boot Specialist** — Deep expertise in Java 21, Spring Boot 3, and high-assurance architecture.
+- ☕ **Java & Enterprise Systems Specialist** — Deep expertise in Java 21, Spring Boot, Open Liberty, GlassFish, WildFly, and high-assurance architecture.
 - 💳 **Financial & Systems Engineering** — Proven track record building idempotent, state-machine-driven financial simulators.
-- 🌐 **Open Source Provenance** — Active committer and contributor across official Jakarta EE, Eclipse JNoSQL, and Spring libraries.
-- 🧪 **Testing & Verification Discipline** — Experienced in TCK development, regression test suites, property testing, and ArchUnit rules.
+- 🌐 **Open Source Provenance** — Active committer and contributor across Open Liberty, GlassFish, Jakarta EE / Jakarta Data, Eclipse JNoSQL, and Spring libraries.
+- 🧪 **Testing & Verification Discipline** — Experienced in TCK development, Arquillian multi-container runners, regression test suites, property testing, and ArchUnit rules.
 - ⚡ **Continuous Learner** — Persistent, self-directed, and constantly pushing into complex domains.
 
 ---
